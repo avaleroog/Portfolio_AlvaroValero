@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'SHUTTLE-X';
-  src: url('/fonts/SHUTTLE-X.ttf') format('truetype');
+  src: url('/Portfolio_AlvaroValero/fonts/SHUTTLE-X.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@
 $color-background: #121212;
 $color-surface: #1a1a1a;
 $color-text: #ffffff;
-$color-primary: #48b3e0; 
+$color-primary: #48b3e0;
 $color-accent: #ff0050;
 
 * {
@@ -66,12 +66,10 @@ app-root {
   top: 0;
   width: 250px;
   height: 100vh;
-  background: linear-gradient(
-    180deg,
-    $color-surface 0%,
-    color.adjust($color-surface, $lightness: -5%) 100%
-  );
-  box-shadow: 
+  background: linear-gradient(180deg,
+      $color-surface 0%,
+      color.adjust($color-surface, $lightness: -5%) 100%);
+  box-shadow:
     2px 0 20px rgba(0, 0, 0, 0.4),
     inset -1px 0 0 rgba($color-primary, 0.1);
   display: flex;
@@ -87,11 +85,9 @@ app-root {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(
-      ellipse at top,
-      rgba($color-primary, 0.05) 0%,
-      transparent 70%
-    );
+    background: radial-gradient(ellipse at top,
+        rgba($color-primary, 0.05) 0%,
+        transparent 70%);
     pointer-events: none;
   }
 }
@@ -118,14 +114,14 @@ app-root {
     font-family: 'SHUTTLE-X', 'Poppins', sans-serif;
     letter-spacing: 3px;
     margin-bottom: 8px;
-    text-shadow: 
+    text-shadow:
       0 0 10px rgba($color-primary, 0.3),
       0 0 20px rgba($color-primary, 0.1);
     transition: all 0.3s ease;
 
     &:hover {
       transform: scale(1.05);
-      text-shadow: 
+      text-shadow:
         0 0 15px rgba($color-primary, 0.5),
         0 0 30px rgba($color-primary, 0.2);
     }
@@ -218,7 +214,7 @@ app-root {
         border-color: $color-primary;
         background: rgba($color-primary, 0.15);
         transform: translateY(-3px) scale(1.02);
-        box-shadow: 
+        box-shadow:
           0 8px 25px rgba($color-primary, 0.3),
           0 0 0 1px rgba($color-primary, 0.1),
           inset 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -320,7 +316,7 @@ app-root {
     height: 100vh;
     background:
       linear-gradient(rgba($color-background, 0.7), rgba($color-background, 0.7)),
-      url('/images/azul.jpg');
+      url('/Portfolio_AlvaroValero/images/azul.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -667,7 +663,7 @@ section {
 
   .timeline {
     position: relative;
-    
+
     &::before {
       content: '';
       position: absolute;
@@ -783,7 +779,7 @@ section {
         color: rgba($color-text, 0.85);
         line-height: 1.6;
 
-        > p {
+        >p {
           margin-bottom: 25px;
           font-size: 15px;
         }
@@ -820,7 +816,7 @@ section {
 
               &:hover {
                 padding-left: 10px;
-                
+
                 .logro-icon {
                   transform: scale(1.2);
                 }
@@ -1223,11 +1219,9 @@ button[type="submit"] {
 
 /* Footer Styles */
 .footer {
-  background: linear-gradient(
-    135deg,
-    $color-surface 0%,
-    color.adjust($color-surface, $lightness: -10%) 100%
-  );
+  background: linear-gradient(135deg,
+      $color-surface 0%,
+      color.adjust($color-surface, $lightness: -10%) 100%);
   border-top: 1px solid rgba($color-primary, 0.2);
   position: relative;
   overflow: hidden;
@@ -1241,11 +1235,9 @@ button[type="submit"] {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(
-      ellipse at top,
-      rgba($color-primary, 0.05) 0%,
-      transparent 50%
-    );
+    background: radial-gradient(ellipse at top,
+        rgba($color-primary, 0.05) 0%,
+        transparent 50%);
     pointer-events: none;
   }
 
@@ -1612,16 +1604,15 @@ hr {
   height: 2px;
   margin: 40px 0;
   position: relative;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    $color-primary 20%, 
-    $color-accent 50%, 
-    $color-primary 80%, 
-    transparent 100%
-  );
+  background: linear-gradient(90deg,
+      transparent 0%,
+      $color-primary 20%,
+      $color-accent 50%,
+      $color-primary 80%,
+      transparent 100%);
   border-radius: 2px;
   overflow: hidden;
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -1629,14 +1620,13 @@ hr {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, 
-      transparent 0%, 
-      rgba(255, 255, 255, 0.4) 50%, 
-      transparent 100%
-    );
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        transparent 100%);
     animation: shimmer 3s infinite;
   }
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -1644,87 +1634,80 @@ hr {
     left: 0;
     width: 100%;
     height: 6px;
-    background: radial-gradient(ellipse at center, 
-      rgba(72, 179, 224, 0.3) 0%, 
-      rgba(72, 179, 224, 0.1) 50%, 
-      transparent 100%
-    );
+    background: radial-gradient(ellipse at center,
+        rgba(72, 179, 224, 0.3) 0%,
+        rgba(72, 179, 224, 0.1) 50%,
+        transparent 100%);
     filter: blur(3px);
     opacity: 0.7;
   }
-  
+
   &.section-divider {
     margin: 60px auto;
     width: 80%;
     max-width: 600px;
     height: 3px;
-    background: linear-gradient(90deg, 
-      transparent 0%, 
-      $color-primary 10%, 
-      $color-accent 30%, 
-      #ffffff 50%, 
-      $color-accent 70%, 
-      $color-primary 90%, 
-      transparent 100%
-    );
-    
+    background: linear-gradient(90deg,
+        transparent 0%,
+        $color-primary 10%,
+        $color-accent 30%,
+        #ffffff 50%,
+        $color-accent 70%,
+        $color-primary 90%,
+        transparent 100%);
+
     &::after {
       height: 8px;
       top: -3px;
-      background: radial-gradient(ellipse at center, 
-        rgba(72, 179, 224, 0.4) 0%, 
-        rgba(255, 0, 80, 0.2) 50%, 
-        transparent 100%
-      );
+      background: radial-gradient(ellipse at center,
+          rgba(72, 179, 224, 0.4) 0%,
+          rgba(255, 0, 80, 0.2) 50%,
+          transparent 100%);
     }
   }
-  
+
   &.subtle {
     height: 1px;
     margin: 30px 0;
-    background: linear-gradient(90deg, 
-      transparent 0%, 
-      rgba(255, 255, 255, 0.1) 20%, 
-      rgba(255, 255, 255, 0.3) 50%, 
-      rgba(255, 255, 255, 0.1) 80%, 
-      transparent 100%
-    );
-    
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.1) 20%,
+        rgba(255, 255, 255, 0.3) 50%,
+        rgba(255, 255, 255, 0.1) 80%,
+        transparent 100%);
+
     &::before {
       display: none;
     }
-    
+
     &::after {
       height: 3px;
       top: -1px;
-      background: radial-gradient(ellipse at center, 
-        rgba(255, 255, 255, 0.1) 0%, 
-        transparent 70%
-      );
+      background: radial-gradient(ellipse at center,
+          rgba(255, 255, 255, 0.1) 0%,
+          transparent 70%);
     }
   }
-  
+
   &.glow {
-    background: linear-gradient(90deg, 
-      transparent 0%, 
-      $color-primary 25%, 
-      #ffffff 50%, 
-      $color-primary 75%, 
-      transparent 100%
-    );
-    box-shadow: 
+    background: linear-gradient(90deg,
+        transparent 0%,
+        $color-primary 25%,
+        #ffffff 50%,
+        $color-primary 75%,
+        transparent 100%);
+    box-shadow:
       0 0 10px rgba(72, 179, 224, 0.5),
       0 0 20px rgba(72, 179, 224, 0.3),
       0 0 30px rgba(72, 179, 224, 0.1);
-    
+
     &::after {
       height: 10px;
       top: -4px;
-      background: radial-gradient(ellipse at center, 
-        rgba(72, 179, 224, 0.6) 0%, 
-        rgba(72, 179, 224, 0.3) 30%, 
-        transparent 70%
-      );
+      background: radial-gradient(ellipse at center,
+          rgba(72, 179, 224, 0.6) 0%,
+          rgba(72, 179, 224, 0.3) 30%,
+          transparent 70%);
       filter: blur(5px);
     }
   }
@@ -1734,9 +1717,11 @@ hr {
   0% {
     left: -100%;
   }
+
   50% {
     left: 100%;
   }
+
   100% {
     left: 100%;
   }
